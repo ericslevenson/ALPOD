@@ -19,10 +19,8 @@ This repository stores the core algorithms used to produce ALPOD. Each algorithm
 (3.4) Merge utm zone shapefiles in QGIS. Manually dissolve lakes spanning utm zones.<br />
 <br />
 
-### Steps 1-3 are in support of constructing ALPOD. Steps 4 and 5 are in support of the analysis for the manuscript: 'Constraining permafrost controls on the distribution of lakes and ponds across Alaska using a new high-resolution lake dataset'
+### Steps 1-3 are in support of constructing ALPOD. Step 4 is in support of the analysis for the manuscript: 'Glacial History Constrains Permafrost Controls over Lake and Pond Distribution'
 
 ### Step 4: Intersect ancillary datasets
 (4.1) hu12.py: aggregates lake statistics to NHD watersheds, and spatially joins watersheds with ancillary datasets to classify watersheds by permafrost extent, glacial history, and geologic substrate by intersect.
-(4.2) Produce a union of glacial, permafrost, and geology dataset to produce a feature for each unique combination of classes.
-(4.3) terrainClassLakeStatistics.py: 
-### Step 5: 
+(4.2) cuzickTests.R performs Cuzick tests for trends in lake statistics across ordered groups (i.e., ordered permafrost classes) for relevant subsets of watersheds based on geomorphic conditions.
