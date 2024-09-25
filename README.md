@@ -21,7 +21,7 @@ This repository stores the core algorithms used to produce ALPOD. Each algorithm
 
 ### Steps 1-3 are in support of constructing ALPOD. Step 4 is in support of the analysis for the manuscript: 'Glacial History Constrains Permafrost Controls over Lake and Pond Distribution'
 
-### Step 4: Intersect ancillary datasets
-(4.1) hu12.py: aggregates lake statistics to NHD watersheds, and spatially joins watersheds with ancillary datasets to classify watersheds by permafrost extent, glacial history, and geologic substrate by intersect.
-(4.2) cuzickTests.R performs Cuzick tests for trends in lake statistics across ordered groups (i.e., ordered permafrost classes) for relevant subsets of watersheds based on geomorphic conditions.
-(4.3) terrainClassLakeStatistics.py takes a union of all the ancillary datasets and calculates basic lake statistics such as lake density, mean lake size, density, fraction for distinct permafrost classes and geomorphic settings.
+### Step 4: Intersect ancillary datasets and conduct statistical tests
+(4.1) hu12.py: aggregates lake statistics to NHD watersheds, and spatially joins watersheds with ancillary datasets to classify watersheds by permafrost extent, glacial history, and geologic substrate by intersect.<br />
+(4.2) cuzickTests.R performs Cuzick tests for trends in lake statistics across ordered groups (i.e., ordered permafrost classes) for relevant subsets of watersheds based on geomorphic conditions.<br />
+(4.3) terrainClassLakeStatistics.py takes a union of all the ancillary datasets and calculates basic lake statistics such as lake density, mean lake size, density, fraction for distinct permafrost classes and geomorphic settings.<br />
