@@ -1,5 +1,5 @@
 # Alaska Lake and Pond Occurrence Dataset (ALPOD)
-This repository stores the core algorithms used to produce ALPOD. Each algorithm's role in the overall dataset production is as follows:
+This repository stores the core algorithms used to produce ALPOD. It also includes files for watershed-based analyses of ALPOD spatial patterns. Each algorithm's role in the overall dataset production is as follows:
 
 ### Step 1: Produce a maximum possible lake extent mask across Alaska ##
 (1.1) S2bgrnExport.ipynb: Google Earth Engine (GEE) script to rapidly filter and visualize Sentinel-2 images. Used to identify and download 1-2 ice and cloud-free images per Sentinel-2 tile near the seasonal maximum lake extent.<br />
@@ -25,3 +25,6 @@ This repository stores the core algorithms used to produce ALPOD. Each algorithm
 (4.1) hu12.py: aggregates lake statistics to NHD watersheds, and spatially joins watersheds with ancillary datasets to classify watersheds by permafrost extent, glacial history, and geologic substrate by intersect.<br />
 (4.2) cuzickTests.R performs Cuzick tests for trends in lake statistics across ordered groups (i.e., ordered permafrost classes) for relevant subsets of watersheds based on geomorphic conditions.<br />
 (4.3) terrainClassLakeStatistics.py takes a union of all the ancillary datasets and calculates basic lake statistics such as lake density, mean lake size, density, fraction for distinct permafrost classes and geomorphic settings.<br />
+
+### Additional files for watershed-based analysis
+watersheds.csv includes ALPOD statistics aggregated to NHD HUC12 watersheds across Alaska. Its variables are explained in watersheds_tableSchema.pdf. These files are utilized in the manuscript Glacial History Modifies Permafrost Controls on the Distribution of Lakes and Ponds. 
