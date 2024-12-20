@@ -1,5 +1,5 @@
 # Alaska Lake and Pond Occurrence Dataset (ALPOD)
-This repository stores the core algorithms used to produce ALPOD. It also includes files for watershed-based analyses of ALPOD spatial patterns. Each algorithm's role in the overall dataset production is as follows:
+This repository stores the core algorithms used to produce ALPOD. It's been archived at zenodo: 10.5281/zenodo.14533381. The repository also includes files for watershed-based analyses of ALPOD spatial patterns. Each algorithm's role in the overall dataset production is as follows:
 
 ### Step 1: Produce a maximum possible lake extent mask across Alaska ##
 (1.1) S2bgrnExport.ipynb: Google Earth Engine (GEE) script to rapidly filter and visualize Sentinel-2 images. Used to identify and download 1-2 ice and cloud-free images per Sentinel-2 tile near the seasonal maximum lake extent.<br />
